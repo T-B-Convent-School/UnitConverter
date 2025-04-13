@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.converter.ui.javafx.controller.ConverterController"
+            stylesheets="@styles.css">
+
+    <top>
+        <Label text="Unit Converter" styleClass="title-label">
+            <padding>
+                <Insets top="20" right="0" bottom="10" left="0"/>
+            </padding>
+        </Label>
+    </top>
+
+    <center>
+        <VBox spacing="15" alignment="TOP_CENTER" styleClass="main-container">
+            <padding>
+                <Insets top="10" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Category:" styleClass="input-label" minWidth="80"/>
+                <ComboBox fx:id="categoryComboBox" styleClass="combo-box" prefWidth="200"/>
+            </HBox>
+
+            <HBox spacing="10" alignment="CENTER">
+                <ComboBox fx:id="fromUnitComboBox" styleClass="combo-box" prefWidth="180"/>
+                <Button fx:id="swapButton" text="⇄" styleClass="swap-button"/>
+                <ComboBox fx:id="toUnitComboBox" styleClass="combo-box" prefWidth="180"/>
+            </HBox>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Value:" styleClass="input-label" minWidth="80"/>
+                <TextField fx:id="inputField" styleClass="input-field" prefWidth="200"/>
+            </HBox>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Result:" styleClass="input-label" minWidth="80"/>
+                <TextField fx:id="resultField" styleClass="result-field" prefWidth="200" editable="false"/>
+            </HBox>
+
+            <Button fx:id="convertButton" text="Convert" styleClass="convert-button" prefWidth="150"/>
+        </VBox>
+    </center>
+</BorderPane>
