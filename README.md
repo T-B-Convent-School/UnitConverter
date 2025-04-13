@@ -28,7 +28,7 @@ A JavaFX-based application for converting units across different categories such
 
 1. Clone the repository:
    ```bash
-   git clone  https://github.com/RohanCyberOps/UnitConverter.git
+   git clone  https://github.com/RohanDevOps/UnitConverter.git
    cd  UnitConverter
    ```
 
