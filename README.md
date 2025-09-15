@@ -1,35 +1,49 @@
 
+---
+
 # Unit Converter
 
-A JavaFX-based application for converting units across different categories such as Length, Weight, and Temperature.
+A JavaFX-based desktop application for converting units across various categories such as Length, Weight, and Temperature.
 
 ## Features
 
-- Select a category (e.g., Length, Weight, Temperature).
-- Choose units to convert from and to.
-- Input a value and get the converted result.
-- Swap units for quick reverse conversion.
+- Select a category (e.g., Length, Weight, Temperature)
+- Choose units to convert from and to
+- Input a value and view the converted result
+- Swap units for quick reverse conversion
 
 ## Technologies Used
 
-- **Java**: Core programming language.
-- **JavaFX**: For building the user interface.
-- **Gradle**: Build automation tool.
+- **Java** – Core programming language  
+- **JavaFX** – User interface framework  
+- **Gradle** – Build automation tool
 
 ## Project Structure
 
-- `src/main/java`: Contains the Java source code.
-  - `com.example.converter.ui.javafx.controller.ConverterController`: Handles the application logic.
-- `src/main/resources`: Contains FXML files and stylesheets.
-  - `ConverterView.fxml`: Defines the UI layout.
-  - `styles.css`: Contains the application's styles.
+```
+UnitConverter/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com.example.converter.ui.javafx.controller/
+│   │   │       └── ConverterController.java
+│   │   └── resources/
+│   │       ├── ConverterView.fxml
+│   │       └── styles.css
+├── assets/
+│   └── UC.png
+├── build.gradle
+├── gradlew
+├── gradlew.bat
+└── LICENSE
+```
 
 ## How to Run
 
 1. Clone the repository:
    ```bash
-   git clone  https://github.com/RohanDevOps/UnitConverter.git
-   cd  UnitConverter
+   git clone https://github.com/RohanDevOps/UnitConverter.git
+   cd UnitConverter
    ```
 
 2. Build the project using Gradle:
@@ -42,10 +56,14 @@ A JavaFX-based application for converting units across different categories such
    ./gradlew run
    ```
 
-## Screenshots
+## Screenshot
 
-![Unit Converter Screenshot](assets/UC.png)
+The application interface:
+
+`assets/UC.png`
 
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
